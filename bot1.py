@@ -48,7 +48,7 @@ except ImportError:
 
 DATABASE_URL = os.environ.get(
     "DATABASE_URL",
-    "postgres://u2psmt0rtf487d:p3acf445162b293321536b849173a681d035468539eefea97c94f624746d179f3@c2m7qldd7t9j38.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/dfkbivehqdd646"
+    "postgresql://rolexuser:StrongPass123!@localhost:5432/rolexbot"
 )
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
